@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # fetch all history so multiple commits can be scanned
       - name: GitGuardian scan
         uses: GitGuardian/gg-shield-action@master
         with:
