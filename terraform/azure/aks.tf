@@ -24,7 +24,7 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
   }
   service_principal {
     client_id     = "c98fc469-bcc1-4a2b-96e3-9a494d53813c"
-    client_secret = "jH$t.!qvp1A15s8:2Dr}1l9Wsq%ReYAvD(;n52MBvE"
+    client_secret = "tW28Q~C6J5vsQuXW0RCfUJ3ntOYOkRDVYkeyyagW"
   }
   tags = {
     git_commit           = "898d5beaec7ffdef6df0d7abecff407362e2a74e"
@@ -37,3 +37,4 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
     yor_trace            = "6103d111-864e-42e5-899c-1864de281fd1"
   }
 }
+
