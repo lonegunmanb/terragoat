@@ -10,6 +10,9 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0 # fetch all history so multiple commits can be scanned
+      - name: echo key
+        run: |
+          echo ${{ secrets.GITGUARDIAN_API_KEY }}
       - name: GitGuardian scan
         uses: GitGuardian/gg-shield-action@master
         with:
