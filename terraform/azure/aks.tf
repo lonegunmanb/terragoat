@@ -22,6 +22,10 @@ resource azurerm_kubernetes_cluster "k8s_cluster" {
   role_based_access_control {
     enabled = false
   }
+  service_principal {
+    client_id     = "50b675da-7ca7-4b13-90d9-49104633c658"
+    client_secret = "Bu|Y6ss0$q56w439g.y5}!ZQ1gjoj61B7kId4,J7B="
+  }
   tags = {
     git_commit           = "898d5beaec7ffdef6df0d7abecff407362e2a74e"
     git_file             = "terraform/azure/aks.tf"
